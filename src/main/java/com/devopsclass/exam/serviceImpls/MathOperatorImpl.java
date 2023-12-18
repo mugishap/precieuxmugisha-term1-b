@@ -12,6 +12,11 @@ public class MathOperatorImpl implements MathOperator {
         if ("/".equals(operation) && operand2 == (double) 0) {
             throw new InvalidOperationException("Cannot divide by 0");
         }
+
+        System.out.println("operand1: " + operand1);
+        System.out.println("operand2: " + operand2);
+        System.out.println("operation: " + operation);
+
         switch (operation) {
             case "*":
                 return operand1 * operand2;
