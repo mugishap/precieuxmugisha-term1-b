@@ -1,9 +1,6 @@
 package com.devopsclass.exam.controllers;
 
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-
 import com.devopsclass.exam.dtos.DoMathRequest;
 import com.devopsclass.exam.payload.ApiResponse;
 import org.junit.Test;
@@ -14,7 +11,7 @@ import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import java.util.Objects;
+import static org.junit.Assert.assertEquals;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
